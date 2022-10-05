@@ -7,8 +7,6 @@ const Livros = () => {
     const [livros, setLivros] = useState(null)
 
     useEffect(() => {
-        console.log('Fazendo requisição...')
-        
         const pegarLivros = async () => {
             const resposta = await fetch('/api/livros')
             const json = await resposta.json()

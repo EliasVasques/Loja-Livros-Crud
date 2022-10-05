@@ -12,6 +12,7 @@ const livroSchema = new Schema({
     },
     descricao: {
         type: String,
+        required: true 
     },
     preco: {
         type: Number,
@@ -19,7 +20,7 @@ const livroSchema = new Schema({
     },
     imagem: {
         type: String,
-        //required: true 
+        required: true 
     }
 }, { timestamps: true })
 

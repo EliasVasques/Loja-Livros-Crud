@@ -4,8 +4,8 @@ import './index.css'
 
 const Livro = ( { livro } ) => {
     
-    const deletarLivro = async () => {
-        const resposta = await fetch('api/livros/' + livro._id, {
+    const deletarLivro = () => {
+        fetch('api/livros/' + livro._id, {
             method: 'DELETE',
         })
     }

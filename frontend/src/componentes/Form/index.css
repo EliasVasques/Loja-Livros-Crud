@@ -1,0 +1,7 @@
+.add-produto {
+    display: flex;
+    flex-direction: column;
+}
+.add-produto input {
+    margin-bottom: 20px;
+}

@@ -7,11 +7,11 @@ const Navbar = () => {
     
     return(
         <nav>
-            <ion-icon name="book-outline"></ion-icon>
-            <div className="links">
-                <Link to="/">Livros</Link>
-                <Link to="/addProduto">Add Produto</Link>
-            </div>
+            <Link to="/">
+                <ion-icon name="book-outline"></ion-icon>
+            </Link>
+
+            <Link to="/addProduto">Add Produto</Link>
         </nav>
     )
 }

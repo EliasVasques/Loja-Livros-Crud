@@ -11,7 +11,7 @@ const AddProduto = () => {
     if(buscadorParametros.has('id')) id = buscadorParametros.get('id')
 
     return(
-        <div className='container'>
+        <div className='container-add-produto'>
             <Form id={id} />
         </div>
     )

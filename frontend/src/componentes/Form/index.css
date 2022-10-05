@@ -1,7 +1,7 @@
-.add-produto {
+.form {
     display: flex;
     flex-direction: column;
 }
-.add-produto input {
+.form input {
     margin-bottom: 20px;
 }

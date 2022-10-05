@@ -57,7 +57,7 @@ const Form = ( { id }) => {
     }
 
     return(
-        <form action="" className='add-produto' onSubmit={submitFeito}>
+        <form action="" className='form' onSubmit={submitFeito}>
             <label>Nome</label>
             <input type="text" onChange={e => setNome(e.target.value)} value={nome} />
 
@@ -73,7 +73,7 @@ const Form = ( { id }) => {
             <label>Imagem</label>
             <input type="text" onChange={(e) => setImagem(e.target.value)} value={imagem} />
 
-            <button>Adcionar</button>
+            <button>{ id ? 'Alterar Livro' : 'Adcionar Livro'}</button>
         </form>
     )
 }

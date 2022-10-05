@@ -1,10 +1,12 @@
 const { Router } = require('express')
 
-const { addLivro, pegarLivros, removerLivro, alterarLivro } = require('../Controllers/livros')
+const { addLivro, pegarLivros, removerLivro, alterarLivro, pegarUmLivro } = require('../Controllers/livros')
 
 const router = Router()
 
 router.get('', pegarLivros)
+
+router.get('/:id', pegarUmLivro)
 
 router.post('', addLivro)
 
